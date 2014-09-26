@@ -22,6 +22,8 @@ extern "C" {
 	}
 
 	void ISINTERNETCONNECTEDNSIS_API IsInternetConnected(HWND hwndParent, int string_size, TCHAR *variables, stack_t **stacktop, extra_parameters *extra) {
+		EXDLL_INIT();
+		
 		DWORD dwFlags;
 		int ret;
 
